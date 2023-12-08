@@ -1,12 +1,9 @@
-import math
-for Number in range(1, 5000):
-    Temp = Number
-    Sum = 0
-    while(Temp > 0):
-        Reminder = Temp % 10
-        Factorial = math.factorial(Reminder)
-        Sum = Sum + Factorial
-        Temp = Temp // 10
-    
-    if (Sum == Number):
-        print(" %d is a Strong Number" %Number)
+for i in range(1,999):
+	a=i
+	sum=0
+	while(i>0):
+		rem=i%10
+		sum=sum+(rem*rem*rem)
+		i=i//10
+	if(sum==a):
+		print(a, "is a Armstrong Number")
